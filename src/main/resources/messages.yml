@@ -1,0 +1,11 @@
+# Cấu hình tin nhắn của plugin SL-BossRewards
+# Hỗ trợ mã màu (sử dụng & thay cho §) và placeholder %boss%
+
+prefix: "&8[&eBossRewards&8] &r"
+
+# Tin nhắn thông báo khi người chơi nhận được phần thưởng (có thể để trống "" nếu không muốn hiện)
+reward-received: "&aBạn đã nhận được quà từ việc tham gia hạ gục Boss %boss%!"
+
+# Tin nhắn phản hồi lệnh reload
+reload-success: "&aĐã tải lại cấu hình thành công!"
+no-permission: "&cBạn không có quyền sử dụng lệnh này!"

@@ -1,0 +1,13 @@
+name: SL-BossRewards
+version: 1.0.0
+main: com.sololeveling.bossrewards.SLBossRewards
+api-version: '1.21'
+depend: [MythicMobs]
+authors: [SLTeam]
+description: Phân phát quà tự động khi giết boss
+
+commands:
+  slbossrewards:
+    description: Lệnh chính của SL-BossRewards
+    usage: /slbossrewards <reload>
+    aliases: [bossrewards, sbr]

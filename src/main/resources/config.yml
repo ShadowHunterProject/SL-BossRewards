@@ -1,0 +1,23 @@
+# Cấu hình phần thưởng cho Boss
+# Hỗ trợ phân phát lệnh thưởng khi giết boss
+# Các placeholder được hỗ trợ: %player%, %boss%
+
+bosses:
+  Orc_Giant:
+    killer:
+      min-damage-percent: 10.0 # Người kết liễu cũng phải gây ra tối thiểu 10% máu mới được quà killer
+      commands:
+        - "mmoitems give KHOANG_SAN THAN_3 10 %player%"
+        - "mmoitems give RUONG TRANG_BI_NGAU_NHIEN 3 %player%"
+        - "sl-booster:slb give %player% solo-leveling-exp-1h"
+    radius:
+      - distance: 8
+        min-damage-percent: 5.0 # (Yêu cầu) Phải gây ra tối thiểu 5% tổng lượng máu của Boss
+        max-players: 4
+        commands:
+          - "mmoitems give RUONG TRANG_BI_NGAU_NHIEN 2 %player%"
+      - distance: 16
+        min-damage: 500.0 # (Yêu cầu) Phải gây ra tối thiểu 500 sát thương lên Boss
+        max-players: -1 # Không giới hạn người
+        commands:
+          - "mmoitems give RUONG TRANG_BI_NGAU_NHIEN 1 %player%"

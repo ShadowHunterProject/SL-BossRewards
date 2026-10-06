@@ -1,0 +1,10 @@
+﻿target/
+.m2_repo/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.idea/
+*.iml
+.vscode/
